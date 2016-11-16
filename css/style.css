@@ -104,8 +104,8 @@ p.price{color:orange;}
 
 .main3 li,.main3-tabcard-left,.dapei-content-left img,.reping-box{transition:all .5s ease;}
 .main3 li:hover,.main3-tabcard-left:hover,.dapei-content-left img:hover,.reping-box:hover{transform:translate(0,-3px);box-shadow:4px 10px 15px rgba(0,0,0,0.1);}
-.main3{width: 100%;background-color: #f5f5f5;margin-top: 60px;overflow:hidden;}
-.main3-content{width: 1226px;margin:0 auto;}
+.main3{width: 100%;background-color: #f5f5f5;margin-top: 60px;padding-bottom:40px;}
+.main3-content{width: 1226px;margin:0 auto;overflow:hidden;}
 .zhineng-head{margin-top:40px;color:#000;font-size:22px;overflow:hidden;}
 .zhineng-head h2{float:left;}
 .zhineng-head .lookmore{float:right;font-size:16px;color:#000;}
@@ -153,6 +153,29 @@ li.last-more h3{margin-top:20px;}
 .reping-box img{width:295px;height:auto;}
 .reping-box a{display:inline-block;padding:30px;text-align:left;line-height:20px;height:60px;}
 .reping-t-price{color:red;}
+
+/* 内容 */
+.main-neirong{width:1226px;margin:40px auto 0;overflow:hidden;}
+.main-neirong h2{font-size:22px;color:#000;line-height:20px;}
+.neirong-box{width:295px;height:350px;float:left;text-align:center;margin-top:16px;background-color:#fff;padding:10px 0;}
+.neirong-box+.neirong-box{margin-left:15px;}
+.neirong-box h3{margin:10px 0;}
+#neirong-box1{border-top: 2px solid #ff6700;}
+#neirong-box1 h3{font-size:18px;color:#ff6700;}
+#neirong-box2{border-top: 2px solid #83C44E;}
+#neirong-box2 h3{font-size:18px;color:#83c453;}
+#neirong-box3{border-top: 2px solid #e53f3b;}
+#neirong-box3 h3{font-size:18px;color:#e53f3b;}
+#neirong-box4{border-top: 2px solid #519cf3;}
+#neirong-box4 h3{font-size:18px;color:#519cf3;}
+.neirong-tab{padding:30px 0;}
+.card-text{height:86px;padding:0 10px;line-height:20px;}
+.card-tit{font-size:18px;color:#000;}
+.card-p{font-size:14px;color:#000;}
+#neirong-box1 .card-text a{border:1px solid #ff6700;padding:2px;color:#ff6700;font-size:16px;margin-top:4px;}
+#neirong-box2 .card-text a{border:1px solid #83C44E;padding:2px;color:#83C44E;font-size:16px;margin-top:4px;}
+#neirong-box3 .card-text a{border:1px solid #e53f3b;padding:2px;color:#e53f3b;font-size:16px;margin-top:4px;}
+#neirong-box4 .card-text a{border:1px solid #519cf3;padding:2px;color:#519cf3;font-size:16px;margin-top:4px;}
 
 /* foot */
 .foot{width:100%;}

@@ -10,7 +10,7 @@ $(function() {
 		})
 	});
 	//轮播图
-	var mySwiper = new Swiper('.swiper-container', {
+	var myBanner = new Swiper('#banner', {
 		autoplay: 5000, //可选选项，自动滑动
 		pagination: '.swiper-pagination',
 		paginationClickable: true,
@@ -68,6 +68,17 @@ $(function() {
 				dapeiTabs.eq(index).css("display","block");
 			})
 		});
-
 	})();
+
+	//内容
+	var neirongSlide=new Swiper(".neirong-slide",{
+		autoplay: 5000, //可选选项，自动滑动
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		//loop: true,
+		autoplayDisableOnInteraction: false,
+		prevButton:'.swiper-button-prev',
+		nextButton:'.swiper-button-next',
+	})
+
 })
