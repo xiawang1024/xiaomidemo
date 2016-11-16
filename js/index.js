@@ -49,5 +49,25 @@ $(function() {
 				},1000)
 			}
 		},5000)
-	})()
+	})();
+
+	//搭配
+	(function(){
+		var dapei=$(".dapei"),
+			dapeiHdLists=$(".dapei-head-list li"),
+			dapeiTabs=$(".dapei-tab",dapei);
+		// alert(dapeiTabs)
+		dapeiHdLists.each(function(index,list){
+			$(this).mouseover(function(){
+				var _this=$(this);
+				_this.siblings("li").removeClass("dapei-lion");
+				_this.addClass("dapei-lion");
+				dapeiTabs.each(function(index,list){
+					$(this).css("display","none");
+				});
+				dapeiTabs.eq(index).css("display","block");
+			})
+		});
+
+	})();
 })
