@@ -18,7 +18,7 @@ del,ins,u,s,a,a:hover{text-decoration:none;}
 body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,'Microsoft YaHei','Helvetica','sans-serif';color:#333;outline:0;}
 body{background:#fff;}
 a{color:#B0B0B0;}
-
+a:hover{color:#ff6700;}
 /* head */
 .head{width: 100%;height: 40px;line-height: 40px;background-color: #333;}
 .head-box{width: 1226px;height: 40px;line-height: 40px;margin:0 auto;}
@@ -102,15 +102,17 @@ p.price{color:orange;}
 .border4{border-top: 2px solid red;}
 .border5{border-top: 2px solid green;}
 
-.main3 li,.main3-tabcard-left,.dapei-content-left img,.reping-box{transition:all .5s ease;}
-.main3 li:hover,.main3-tabcard-left:hover,.dapei-content-left img:hover,.reping-box:hover{transform:translate(0,-3px);box-shadow:4px 10px 15px rgba(0,0,0,0.1);}
+/* 智能硬件 */
+.main3 li,.main3-tabcard-left,.dapei-content-left img,.reping-box,.neirong-box,.shipin-content{transition:all .5s ease;}
+.main3 li:hover,.main3-tabcard-left:hover,.dapei-content-left img:hover,.reping-box:hover,.neirong-box:hover,.shipin-content:hover{transform:translate(0,-3px);box-shadow:4px 10px 15px rgba(0,0,0,0.1);}
 .main3{width: 100%;background-color: #f5f5f5;margin-top: 60px;padding-bottom:40px;}
 .main3-content{width: 1226px;margin:0 auto;overflow:hidden;}
 .zhineng-head{margin-top:40px;color:#000;font-size:22px;overflow:hidden;}
 .zhineng-head h2{float:left;}
 .zhineng-head .lookmore{float:right;font-size:16px;color:#000;}
 .zhineng-head .lookmore span{display:inline-block;margin-left:8px;width:18px;height:18px;border-radius:50%;background-color:#333;text-align:center;color:#fff;}
-.zhineng-head .lookmore:hover span{background-color:orange;}
+.zhineng-head .lookmore:hover span{background-color:orange;color:#fff;}
+.zhineng-head .lookmore:hover {color:orange;}
 .main3-tabcard{width:100%;margin-top:16px;overflow:hidden;}
 .main3-tabcard-left{width:234px;height:100%;float:left;font-size:0;}
 .main3-tabcard-right{float:right;width:982px;height:100%;}
@@ -177,6 +179,23 @@ li.last-more h3{margin-top:20px;}
 #neirong-box3 .card-text a{border:1px solid #e53f3b;padding:2px;color:#e53f3b;font-size:16px;margin-top:4px;}
 #neirong-box4 .card-text a{border:1px solid #519cf3;padding:2px;color:#519cf3;font-size:16px;margin-top:4px;}
 
+/* 视频 */
+.main-shipin{width:1226px;margin:40px auto 0;overflow:hidden;}
+.shipin-head{overflow:hidden;margin-bottom:20px;}
+.main-shipin h2{font-size:22px;color:#000;line-height:20px;float:left;}
+.shipin-head .lookmore{float:right;font-size:16px;color:#000;}
+.shipin-head .lookmore span{display:inline-block;margin-left:8px;width:18px;height:18px;border-radius:50%;background-color:#333;text-align:center;color:#fff;}
+.shipin-head .lookmore:hover span{background-color:orange;color:#fff;}
+.shipin-head .lookmore:hover {color:orange;}
+.shipin-content{width:295px;background-color:#fff;float:left;text-align:center;overflow:hidden;}
+.shipin-content+.shipin-content{margin-left:15px;}
+.shipin-content img{cursor:pointer;margin-bottom:20px;}
+.shipin-box{padding-bottom:20px;position:relative;}
+.shipin-box a{font-size:16px;line-height:40px;}
+.shipin-box .box-bf{position:absolute;display:inline-block;width:40px;height:20px;border-radius:20px;background-color:rgba(0,0,0,0.6);border:2px solid #fff;top:140px;left:20px;cursor:pointer;transition:all 0.5s ease;}
+.shipin-box:hover .box-bf{background-color:#ff6700;}
+.shipin-box .box-bf:hover{background-color:#ff6700;}
+
 /* foot */
 .foot{width:100%;}
 .foot-main,.bottom-main{width:1226px;overflow:hidden;margin:0 auto;}
@@ -201,3 +220,10 @@ li.last-more h3{margin-top:20px;}
 .bottom-pic{float:right;}
 .bottom-pic li{display:inline-block;margin:6px;}
 .bottom-pic li img{width:85px;height:28px;}
+
+.video-box{display:none;padding:20px 0;width:880px;height:550px;position:fixed;left:0;right:0;top:0;bottom:0;margin:auto auto;z-index:20;background-color:#f5f5f5;}
+.video-box .video-head{padding:0 20px;}
+.video-box .video-head h3{float:left;font-size:26px;line-height:30px;padding-left:16px;}
+.video-box .video-head i{display:inline-block;float:right;width:30px;height:30px;border-radius:50%;line-height:30px;text-align:center;font-size:28px;cursor:pointer;}
+.video-box .video-head i:hover{background-color:#ff6700;}
+.mark{display:none;position:fixed;z-index:19;left:0;right:0;top:0;bottom:0;background-color:rgba(0,0,0,.7);}

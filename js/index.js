@@ -9,6 +9,13 @@ $(function() {
 			navSecList.eq(index).css("display", "none")
 		})
 	});
+	var srchTxt=$(".nav-btn .nav-text");
+	srchTxt.focus(function(){
+		$(this).css("border-color","#ff6700")
+	});
+	srchTxt.blur(function(){
+		$(this).css("border-color","#ddd")
+	});
 	//轮播图
 	var myBanner = new Swiper('#banner', {
 		autoplay: 5000, //可选选项，自动滑动
@@ -79,6 +86,20 @@ $(function() {
 		autoplayDisableOnInteraction: false,
 		prevButton:'.swiper-button-prev',
 		nextButton:'.swiper-button-next',
+	});
+
+	//视频
+	$(".video-close").click(function(){
+		$(".video-box").css("display","none");
+		$(".mark").css("display","none");
+		$("#myVideo").get(0).pause();
+	});
+	$(".shipin-box").each(function(index,item){
+		$(this).click(function(){
+			$(".video-box").css("display","block");
+			$(".mark").css("display","block");
+			$("#myVideo").get(0).play();
+		});
 	})
 
 })
